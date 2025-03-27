@@ -1,0 +1,111 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: box-border;
+    font-family:Poppins ,sans-serif ;
+
+}
+
+body {
+    background: black;
+    color: #ededed;
+    
+    
+
+}
+
+.header{
+    position: fixed;
+    top:0;
+    width:80%;
+    padding: 20px 10%;
+    background:transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+
+.logo{
+    position: relative;
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+ 
+
+
+.navbar a {
+    font-size: 18px;
+    color:#ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+
+}
+.navbar a:hover,
+.navbar.active{
+    color: goldenrod;
+
+}
+
+.Home{
+    height: 100vh;no-
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    
+
+}
+
+.Home-Content{
+    max-width: 600px;
+    
+}
+
+.Home-Content h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+    
+}
+.home{
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+
+}
+
+.Home-Content{
+    max-width: 600px;
+}
+
+.Home-Content h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+
+
+.Home-Content p{
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+img {
+    width: 600px;
+    height: auto;
+    overflow: hidden;
+    opacity: 1.0;
+    background-blend-mode: overlay;
+
+}
+
