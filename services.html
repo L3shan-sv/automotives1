@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="services.css">
+</head>
+<body>
+    <header class="header">
+        <a href"#" class="logo"> Leshan Motors. </a>
+
+        <nav class ="navbar">
+            <a href="index.html">Home</a>
+            <a href="location.html">Locations</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="fleet.html">Fleet</a>
+            <a href="about.html">About</a>
+    
+
+        </nav>
+
+    </header>
+  
+    <div class="container">
+        <h1>Our Services</h1>
+        
+        <div class="service-section">
+            <div class="service-card" id="car-booking-card">
+                <h2>Car Booking</h2>
+                <p>Book your ideal vehicle for your next journey</p>
+                <button onclick="redirectToCarBooking()">Book Now</button>
+            </div>
+
+            <div class="service-card" id="protection-detail-card">
+                <h2>Protection Detail</h2>
+                <p>Choose your protection plan</p>
+                <button onclick="redirectToProtectionServices()">View Plans</button>
+            </div>
+
+            <div class="service-card" id="car-dropoff-card">
+                <h2>Car Drop-off</h2>
+                <p>Schedule your vehicle return</p>
+                <button onclick="showDropoffForm()">Drop-off</button>
+            </div>
+        </div>
+
+        <!-- Drop-off Form (Initially Hidden) -->
+        <div id="dropoff-form" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('dropoff-form')">&times;</span>
+                <h2>Car Drop-off Form</h2>
+                <form id="car-dropoff-form">
+                    <input type="text" placeholder="Booking Reference" required>
+                    <input type="text" placeholder="Vehicle License Plate" required>
+                    <input type="date" placeholder="Drop-off Date" required>
+                    <input type="text" placeholder="Drop-off Location" required>
+                    <select id="dropoff-location" required>
+                        <option value="">Select Drop-off Location</option>
+                        <option value="airport">Airport Branch</option>
+                        <option value="downtown">Downtown Branch</option>
+                        <option value="suburbs">Suburbs Branch</option>
+                    </select>
+                    <button type="submit">Confirm Drop-off</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Notification Modal -->
+        <div id="notification-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('notification-modal')">&times;</span>
+                <h2 id="notification-title">Notification</h2>
+                <p id="notification-message"></p>
+            </div>
+        </div>
+    </div>
+
+  
+    <script src="services.js"></script>
+</body>
+
+</html>
+
